@@ -1,0 +1,7 @@
+#ByteCode
+*.pyc
+__pycache__/
+#envirenoment variables
+.env
+#.editor settings
+.idea/

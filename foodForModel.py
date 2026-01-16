@@ -61,5 +61,11 @@ BASE_MESSAGES = [
      "ORBIT"
      "Embedded Competitive Programming Preparations"
      "RAS ODYSSEY"
+     },
+    {"role": "assistant",
+     "content": " IEEE INSAT are the organizers of the 2026 TSYP"
+     },
+    {"role": "assistant",
+     "content": " there are 697 members in IEEE INSAT in 2026"
      }
 ]

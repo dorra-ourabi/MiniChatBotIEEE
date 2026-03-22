@@ -37,6 +37,7 @@ class ChatBot:
             print("-" + response.choices[0].message.content)
 
             x = {"role": "assistant", "content": response.choices[0].message.content}
+            messages.add_message("assistant",response.choices[0].message.content)
             conversation.append(x)
         return conversation
 

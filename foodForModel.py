@@ -7,23 +7,29 @@ BASE_MESSAGES = [
             " this is important : Summarize your answer "
             "Do NOT mention or repeat previous answers."
         )
-    },
+    },{"role":"user",
+       "content":"what is IEEE INSAT?"},
+
     {
         "role": "assistant",
         "content": "We are IEEE INSAT Student Branch, an energetic community devoted to technological advancement. Rooted in the renowned IEEE, a global force for innovation, we're part of IEEE Region 8, linking us to a vast network across Europe, Africa, and the Middle East. Locally, we're represented by the IEEE Tunisia Section, fostering collaboration and knowledge exchange. INSAT provides the nurturing environment where our ideas flourish into meaningful projects. Together, we push boundaries and inspire the next generation of innovators.."
-    },
+    },{"role":"user",
+       "content":"what is INSAT?"},
     {
         "role": "assistant",
         "content": "INSAT: National Institute of Applied Science and Technology The National Institute of Applied Science and Technology (INSAT) is a Tunisian engineering school located in Tunis. It is one of the most prestigious engineering schools in Tunisia. INSAT is a public institution of higher education and scientific research. It is a member of the University of Carthage.."
-    },
+    },{"role":"user",
+       "content":"what is TSYP?"},
     {
         "role": "assistant",
         "content": "TSYP is the Tunisian Students and Young Professionals contest."
-    },
+    },{"role":"user",
+       "content":"when was IEEE INSAT founded?"},
     {
         "role": "assistant",
         "content": "IEEE INSAT was founded in 2013."
-    },
+    },{"role":"user",
+       "content":"Can you provide me with some acheivments of the IEEE INSAT ?"},
     {
         "role": "assistant",
         "content": "some  of the latest awrads they received: Best RAS Student Branch Chapter This the 2nd time in a row to win this award . we are so thankful for all members and RAS Board for the last mandates 2025-11-09"
@@ -33,7 +39,8 @@ BASE_MESSAGES = [
         "IEEE Region 8 Student Branch of the Year Award 2022 2nd Place 2024-02-29"
         "2023 IEEE Regional Exemplary Student Branch Award 2024-02-09"
 
-    },
+    },{"role":"user",
+       "content":"What are the chapters of IEEE INSAT?"},
     {"role":"assistant",
      "content":"the chapters of IEEE INSAT:"
      "IEEE Robotics & Automation Society INSAT SBC"
@@ -45,6 +52,8 @@ BASE_MESSAGES = [
       "IEEE Special Interest Group on Humanitarian Technology"
 
      },
+{"role":"user",
+       "content":"What are the events IEEE INSAT organized?"},
     {"role":"assistant",
      "content":" events held by the IEEE INSAT and their dates:"
      "DataOverflow:DO is a cycle of trainings that will be concluded with a hackathon in the field of Data Science & AI , this event is a collaboration between IEEE INSAT SB and ACM INSAT : jan -feb"
@@ -62,9 +71,13 @@ BASE_MESSAGES = [
      "Embedded Competitive Programming Preparations"
      "RAS ODYSSEY"
      },
+{"role":"user",
+       "content":"who are the organizers of the next TSYP?"},
     {"role": "assistant",
      "content": " IEEE INSAT are the organizers of the 2026 TSYP"
      },
+{"role":"user",
+       "content":"how many members so far IEEE INSAT counts?"},
     {"role": "assistant",
      "content": " there are 697 members in IEEE INSAT in 2026"
      }

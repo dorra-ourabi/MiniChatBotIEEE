@@ -1,5 +1,5 @@
 
-class Response_type:
+class ChatBotConfig:
     def __init__(self, client,model,messages,max_tokens,temperature):
         self.__client = client
         self.__model = model

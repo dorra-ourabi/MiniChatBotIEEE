@@ -19,5 +19,5 @@ class Client:
 
         return self.__client
 
-
+"""this class uses the design pattern sigleton the connection to the LLM only happens once"""
 

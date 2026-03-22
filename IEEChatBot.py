@@ -1,5 +1,5 @@
 from ChatClass import *
-from Response_typeClass import *
+from ChatBotConfigClass import *
 from MessagesClass import *
 from ClientClass import *
 
@@ -10,7 +10,7 @@ messages=Messages()
 messages.add_message("system","you're a kind and friendly systemt aht answers exactly the question asked and does not put previous answers")
 #messages.add_message("assistant","What is Insat?")
 #messages.add_message("system","INSAT: National Institute of Applied Science and Technology The National Institute of Applied Science and Technology (INSAT) is a Tunisian engineering school located in Tunis. It is one of the most prestigious engineering schools in Tunisia. INSAT is a public institution of higher education and scientific research. It is a member of the University of Carthage..")
-response_type=Response_type(client,"openai/gpt-5.4-nano",messages,50,0)
-chatbot=ChatBot(response_type)
+config =ChatBotConfig(client,"openai/gpt-5.4-nano",messages,100,0)
+chatbot=ChatBot(config)
 conversation=chatbot.talk()
 #print(conversation)

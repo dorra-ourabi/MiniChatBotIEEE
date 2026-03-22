@@ -1,13 +1,16 @@
+from foodForModel import BASE_MESSAGES
+
+
 class Messages:
     def __init__(self):
-       self.__messages=[]
+       self.__messages=BASE_MESSAGES
     def add_message(self,role,content):
-        if role not in {"user","assistant"}:
+        if role not in {"user","assistant","system"}:
             print("ERROR: the role should be either user or assistant")
-        self.__messages.append([{"role":role,"content":content}])
+            return False
+        self.__messages.append({"role":role,"content":content})
         return self.__messages
-    def add_messages(self,messages):
-        return self.__messages.append(messages)
+
     def get_message(self):
         return self.__messages
     def get_messages_by_role(self,role):

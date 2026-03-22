@@ -3,6 +3,8 @@ class ChatBot:
 
     def __init__(self, chatbotconfig):
         self.__chatbotconfig = chatbotconfig
+    def get_config(self):
+        return self.__chatbotconfig
     def get_input(self):
         n = input("-")
         return n
@@ -15,6 +17,7 @@ class ChatBot:
             temperature=self.__chatbotconfig.get_temperature(),
 
         )
+
 
         return response.choices[0].message.content
 
@@ -33,7 +36,7 @@ class ChatBot:
         print("- Hello is there anything you want to know about IEEE INSAT?")
         while True:
             n=self.get_input()
-            if n in ["Goodbye","bye"]:
+            if n in ["Goodbye","bye","quit","goodbye"]:
                 print("Goodbye")
                 break
 

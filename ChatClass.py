@@ -1,20 +1,23 @@
-
+import speech_recognition as sr
+import pyttsx3
 class ChatBot:
 
     def __init__(self, chatbotconfig):
-        self.__chatbotconfig = chatbotconfig
+        self._chatbotconfig = chatbotconfig
+
+
     def get_config(self):
-        return self.__chatbotconfig
+        return self._chatbotconfig
     def get_input(self):
         n = input("-")
         return n
     def ask_LLM(self):
-        client = self.__chatbotconfig.get_client()
+        client = self._chatbotconfig.get_client()
         response = client.chat.completions.create(
-            model=self.__chatbotconfig.get_model(),
-            max_tokens=self.__chatbotconfig.get_max_tokens(),
-            messages=self.__chatbotconfig.get_messages().get_message(),
-            temperature=self.__chatbotconfig.get_temperature(),
+            model=self._chatbotconfig.get_model(),
+            max_tokens=self._chatbotconfig.get_max_tokens(),
+            messages=self._chatbotconfig.get_messages().get_message(),
+            temperature=self._chatbotconfig.get_temperature(),
 
         )
 
@@ -29,7 +32,7 @@ class ChatBot:
 
 
 
-        messages = self.__chatbotconfig.get_messages()
+        messages = self._chatbotconfig.get_messages()
 
         conversation = []
 

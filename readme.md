@@ -63,7 +63,7 @@ Fetches and parses static HTML pages. Best for simple, fast scraping.
 
 Injecting scraped content:
 ```python
-scraper = BeautifulSoupScraper()
+scraper = WebScraper()
 content = scraper.scrape("https://example.com")
 messages.add_message("system", f"Relevant context: {content}")
 ```
